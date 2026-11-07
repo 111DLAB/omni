@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Computer.phx</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #f4f4f9; }
+        .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: inline-block; }
+        button { background-color: #0070f3; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #0051b3; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Product: Computer.phx</h2>
+        <p>Click below to simulate a purchase and download your file.</p>
+        <!-- This triggers our serverless backend function -->
+        <form action="/functions/download" method="GET">
+            <button type="submit">Buy & Download</button>
+        </form>
+    </div>
+</body>
+</html>
